@@ -61,7 +61,7 @@ def _build_llm() -> ChatGoogleGenerativeAI:
         raise EnvironmentError("GEMINI_API_KEY is not set in environment variables.")
 
     return ChatGoogleGenerativeAI(
-        model="gemini-3.5-flash",   # fast, cost-effective flash model
+        model="gemini-2.5-flash",   # fast, cost-effective flash model
         google_api_key=api_key,
         temperature=0.4,            # balanced: consistent but not robotic
         max_tokens=1024,
